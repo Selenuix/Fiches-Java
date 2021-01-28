@@ -9,5 +9,3 @@ git commit -m "Deploy dev"
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:Selenuix/Fiches-Java.git master:develop
-
-#cd -
