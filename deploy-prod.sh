@@ -4,7 +4,7 @@
 set -e
 
 # build
-npm run build
+vuepress build src
 
 # navigate into the build output directory
 cd src/.vuepress/dist
@@ -20,6 +20,6 @@ git commit -m "Deploy"
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:Selenuix/Fiches-Java.git main:main
+git push -f git@github.com:Selenuix/Fiches-Polonais.git master:master
 
 cd -
