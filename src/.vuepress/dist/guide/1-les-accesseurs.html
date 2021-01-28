@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Les accesseurs | Fiches-Java</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="Fiches de révision de Java">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.bca54f71.css" as="style"><link rel="preload" href="/assets/js/app.8296c399.js" as="script"><link rel="preload" href="/assets/js/2.c7085723.js" as="script"><link rel="preload" href="/assets/js/6.ac540f25.js" as="script"><link rel="prefetch" href="/assets/js/10.7c31ab72.js"><link rel="prefetch" href="/assets/js/11.763a6263.js"><link rel="prefetch" href="/assets/js/12.d20b3034.js"><link rel="prefetch" href="/assets/js/3.9263cece.js"><link rel="prefetch" href="/assets/js/4.c2b49e78.js"><link rel="prefetch" href="/assets/js/5.76e67248.js"><link rel="prefetch" href="/assets/js/7.351b5044.js"><link rel="prefetch" href="/assets/js/8.c3bc1a13.js"><link rel="prefetch" href="/assets/js/9.5109f922.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bca54f71.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Fiches-Java</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guide
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guide
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/guide/1-les-accesseurs.html" aria-current="page" class="active sidebar-link">Les accesseurs</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/1-les-accesseurs.html#introduction" class="sidebar-link">Introduction</a></li><li class="sidebar-sub-header"><a href="/guide/1-les-accesseurs.html#examples" class="sidebar-link">Examples</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="les-accesseurs"><a href="#les-accesseurs" class="header-anchor">#</a> Les accesseurs</h1> <h2 id="introduction"><a href="#introduction" class="header-anchor">#</a> Introduction</h2> <p>Afin de simplifier les choses, les accesseurs (en lecture ou écriture) on été créés. Ils permettent d'accéder facilement
+aux attributs d'un objet. Ils se traduisent par les mots clés <strong>get</strong> (en lecture) et <strong>set</strong> (en écriture).</p> <h2 id="examples"><a href="#examples" class="header-anchor">#</a> Examples</h2> <p>La classe <em>Eleve</em> a plusieurs attributs. Si on veut utiliser ailleurs que dans la classe elle-même, on créé des
+accesseurs (en lecture et écriture).</p> <p><img src="data:image/png;base64,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" alt="Figure 6 : le diagramme de classes"></p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Eleve</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+    
+    <span class="token comment">// Accesseurs</span>
+    <span class="token comment">// En lecture</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getNom</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>nom<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getPrenom</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>prenom<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getClasse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>classe<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// En écriture</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setClasse</span><span class="token punctuation">(</span>string classe<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>classe <span class="token operator">=</span> classe<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/" class="prev router-link-active">
+        Introduction
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8296c399.js" defer></script><script src="/assets/js/2.c7085723.js" defer></script><script src="/assets/js/6.ac540f25.js" defer></script>
+  </body>
+</html>

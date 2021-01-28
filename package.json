@@ -1,0 +1,19 @@
+{
+  "name": "Fiches-Java",
+  "version": "0.0.1",
+  "description": "Fiches de révision de Java",
+  "main": "index.js",
+  "authors": {
+    "name": "Anthony",
+    "email": "email@company.tld"
+  },
+  "repository": "/Fiches-Java",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
